@@ -1,0 +1,86 @@
+:root {
+    --amarillo-oscuro: #FFD600;
+    --amarillo-claro: #FFF9C4;
+    --gris: #333;
+    --blanco: #fff;
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--amarillo-claro);
+    color: var(--gris);
+  }
+  header {
+    background: var(--amarillo-oscuro);
+    color: var(--gris);
+    padding: 1.5em 2em;
+    text-align: center;
+    box-shadow: 0 2px 8px #e6c20060;
+  }
+  nav {
+    background: #fff7b2;
+    box-shadow: 0 2px 6px #e6c20030;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav li {
+    margin: 0 1em;
+  }
+  nav a {
+    display: block;
+    padding: 1em 1.5em;
+    color: var(--gris);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+    transition: background 0.2s, color 0.2s;
+  }
+  nav a.active, nav a:hover {
+    background: var(--amarillo-oscuro);
+    color: var(--blanco);
+  }
+  main {
+    max-width: 900px;
+    margin: 2em auto;
+    background: #fffde7;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px #e6c20030;
+    padding: 2em;
+  }
+  section {
+    display: none;
+    animation: fadeIn 0.5s;
+  }
+  section.active {
+    display: block;
+  }
+  h2 {
+    color: #bfa600;
+  }
+  ol, ul {
+    margin-left: 1.2em;
+  }
+  code, .math {
+    background: #fffde7;
+    padding: 0.15em 0.4em;
+    border-radius: 4px;
+    font-family: 'Consolas', monospace;
+    color: #d4af37;
+  }
+  footer {
+    background: var(--amarillo-oscuro);
+    color: var(--gris);
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+    font-size: 1em;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
